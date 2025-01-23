@@ -16,6 +16,10 @@ _S2_lake-wise_export.ipynb_ Exports the weekly surface water extent within each 
 
 _Lake_wise_cloudiness_export.ipynb_ Exports the mean annual cloudiness of each lake in the dataset. Cloudiness is determined from Sentinel-2.
 
+_postprocessing_lakes.ipynb_ Combines Landsat and Sentinel-2 lake area extent and applies filters. 
+
+_ConcatRegions_cleandata.ipynb_ takes csvs of regional lake characteristics and annual surface water extent, combines them, and performs final filtering
+
 _get_fractal_dimension.py_ takes input shapefiles of lakes and outputs regional fractal dimensions  
 
 ## Data analysis, visualization, and summary 
