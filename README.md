@@ -8,6 +8,8 @@ _BatchLakeOccurence.ipynb_ Exports the weekly surface water occurance within eac
 _WeeklyMosaic.ipynb_ Takes weekly surface water occurance tiles (output from _BatchLakeOccurence.ipynb_), removes bad tiles (i.e., where surface water occurence is <50% of expected lake area and number of lakes is <30% of expected), and mosaics by week and region.
 
 ## Data curation 
+_CloudOccurrence.ipynb_ Exports the annual cloudiness for each Sentinel-2 tile in each region of each year.
+
 _Landsat_lake_wise_export.ipynb_ Exports the maximum annual surface water extent within each lake polygon (buffered by 60 m) for the Pekel et al., (2016) and Pickens et al., (2020) products.
 
 _S2_lake-wise_export.ipynb_ Exports the weekly surface water extent within each lake polygon (buffered by 60 m) for the Sentinel-2 based product (created using ALPOD workflow).
