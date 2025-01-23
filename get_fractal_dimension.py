@@ -39,7 +39,7 @@ def fractal_dimension_from_perimeter_area(perimeters, areas):
     return fractal_dimension, intercept, r_value, p_value, std_err
 
 # Path to the directory containing the files
-directory = '/Users/webbe/Documents/ALPOD/Lakes_clipped/'
+directory = 'Documents/ALPOD/Lakes_clipped/'
 
 # List to store results
 results = []
