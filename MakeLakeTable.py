@@ -5,27 +5,21 @@ import pandas as pd
 # Define regions and associated files
 regions = {
     'TUK': {
-        'riverfile': "/Documents/ALPOD/River_vectors/MRD_rivers_drive30.shp",
         'region_label': 'TUK'
     },
     'AND': {
-        'riverfile': "/Documents/ALPOD/River_vectors/MRD_rivers_drive30.shp",
         'region_label': 'AND'
     },
     'MRD': {
-        'riverfile': "/Documents/ALPOD/River_vectors/MRD_rivers_drive30.shp",
         'region_label': 'MRD'
     },
     'AKCP': {
-        'riverfile': "/Documents/ALPOD/River_vectors/AKCP_rivers_30.shp",
         'region_label': 'AKCP'
     },
     'YKD': {
-        'riverfile': "/Documents/ALPOD/River_vectors/YKD_rivers_drive_30.shp",
         'region_label': 'YKD'
     },
     'YKF': {
-        'riverfile': "/Documents/ALPOD/River_vectors/YKF_river.shp",
         'region_label': 'YKF'
     }
 }
@@ -39,7 +33,6 @@ all_regions_summary = []
 # Iterate over all regions
 for region, data in regions.items():
     region_label = data['region_label']
-    riverfile = data['riverfile']
     
     # Load the lake shapefile for the region
     lakeshpfile = f'ALPOD/Lakes_clipped/justlakes_{region_label}.shp'
