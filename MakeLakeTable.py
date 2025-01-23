@@ -5,33 +5,33 @@ import pandas as pd
 # Define regions and associated files
 regions = {
     'TUK': {
-        'riverfile': "/Users/webbe/Documents/ALPOD/River_vectors/MRD_rivers_drive30.shp",
+        'riverfile': "/Documents/ALPOD/River_vectors/MRD_rivers_drive30.shp",
         'region_label': 'TUK'
     },
     'AND': {
-        'riverfile': "/Users/webbe/Documents/ALPOD/River_vectors/MRD_rivers_drive30.shp",
+        'riverfile': "/Documents/ALPOD/River_vectors/MRD_rivers_drive30.shp",
         'region_label': 'AND'
     },
     'MRD': {
-        'riverfile': "/Users/webbe/Documents/ALPOD/River_vectors/MRD_rivers_drive30.shp",
+        'riverfile': "/Documents/ALPOD/River_vectors/MRD_rivers_drive30.shp",
         'region_label': 'MRD'
     },
     'AKCP': {
-        'riverfile': "/Users/webbe/Documents/ALPOD/River_vectors/AKCP_rivers_30.shp",
+        'riverfile': "/Documents/ALPOD/River_vectors/AKCP_rivers_30.shp",
         'region_label': 'AKCP'
     },
     'YKD': {
-        'riverfile': "/Users/webbe/Documents/ALPOD/River_vectors/YKD_rivers_drive_30.shp",
+        'riverfile': "/Documents/ALPOD/River_vectors/YKD_rivers_drive_30.shp",
         'region_label': 'YKD'
     },
     'YKF': {
-        'riverfile': "/Users/webbe/Documents/ALPOD/River_vectors/YKF_river.shp",
+        'riverfile': "/Documents/ALPOD/River_vectors/YKF_river.shp",
         'region_label': 'YKF'
     }
 }
 
 # Load the fractal dimension data
-fractaldf = pd.read_csv('/Users/webbe/Library/CloudStorage/GoogleDrive-webb.elizabeth.e@gmail.com/My Drive/PostDoc/ALPOD/fractal_dimensions.csv')
+fractaldf = pd.read_csv('ALPOD/fractal_dimensions.csv')
 
 # Initialize an empty list to collect data for all regions
 all_regions_summary = []
@@ -42,7 +42,7 @@ for region, data in regions.items():
     riverfile = data['riverfile']
     
     # Load the lake shapefile for the region
-    lakeshpfile = f'/Users/webbe/Documents/ALPOD/Lakes_clipped/justlakes_{region_label}.shp'
+    lakeshpfile = f'ALPOD/Lakes_clipped/justlakes_{region_label}.shp'
     lakeshps = gpd.read_file(lakeshpfile)
     
     # Get the fractal dimension for the region
@@ -78,6 +78,6 @@ for region, data in regions.items():
 combined_summary = pd.DataFrame(all_regions_summary)
 
 # Save the combined summary table to a CSV file
-combined_savepath = '/Users/webbe/Documents/ALPOD/all_regions_lakestats.csv'
+combined_savepath = 'Documents/ALPOD/all_regions_lakestats.csv'
 combined_summary.to_csv(combined_savepath, index=False)
 print(f"Saved summary table for all regions to {combined_savepath}")
