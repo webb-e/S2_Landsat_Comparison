@@ -18,6 +18,8 @@ _Lake_wise_cloudiness_export.ipynb_ Exports the mean annual cloudiness of each l
 
 _get_fractal_dimension.py_ takes input shapefiles of lakes and outputs regional fractal dimensions  
 
-## Data visualization, statistics, and summary 
+## Data analysis, visualization, and summary 
 _MakeLakeTable.py_ takes input shapefiles of lakes and input csv of fractal dimensions and outputs a summary table (Table 1)  
+
+_LandsatAnalysis_MLmodel.ipynb_ Fits the machine learning model relating the mean relative difference between products in dry years subtracted from the mean relative difference between products in wet years to various explantory features.
 
