@@ -24,10 +24,6 @@ def fractal_dimension_from_perimeter_area(perimeters, areas):
     log_perimeters = np.log(perimeters)
     log_areas = np.log(areas)
 
-    # Check if there's enough variation in the log areas to perform regression
-    #if np.isclose(np.var(log_areas), 0):
-     #   raise ValueError("Insufficient variation in area data for meaningful regression.")
-
     # Perform linear regression
     slope, intercept, r_value, p_value, std_err = linregress(log_areas, log_perimeters)
     
