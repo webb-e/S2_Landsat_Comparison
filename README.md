@@ -1,6 +1,10 @@
-**_Data processing files_**
+```
+## Data processing files
 _ALPOD_create_extraction_shps.py_ takes input shapefiles of lakes, buffers by 60 m, subtracts rivers, dissolves overlapping polygons, and adds a lake_id.
 _get_fractal_dimension.py_ takes input shapefiles of lakes and outputs regional fractal dimensions
+```
 
-**_Data summary files_**
+```
+##Data summary files
 _MakeLakeTable.py_ takes input shapefiles of lakes and input csv of fractal dimensions and outputs a summary table (Table 1)
+```
