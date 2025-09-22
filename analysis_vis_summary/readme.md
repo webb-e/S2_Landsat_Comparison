@@ -10,6 +10,8 @@ _LandsatComparison_Figure4.R_    Creates Figure 4 (Absolute and relative differe
 
 _LandsatComparison_Figure5.R_    Creates Figure 5 (Relative difference between estimates of maximum lake area) and fits an ANOVA to test if dryness sensitivity is different between comparisons
 
+_LandsatComparison_Figure6.R_    Creates Figure 6 (Example lakes showing how Landsat and Sentinel-2 surface water classifications vary between wet and dry years)
+
 _LandsatComparison_Figure7.R_    Creates Figure 7 (Lake area trends measured across regions with Sentinel-2 and Landsat products and effect of wetness sensitivity to the relative error in the trend) and calculates the average relative difference in the trend between Landsat products and S2.
 
 _Table1.py_    takes input shapefiles of lakes and input csv of fractal dimensions and outputs a summary table (Table 1)  
