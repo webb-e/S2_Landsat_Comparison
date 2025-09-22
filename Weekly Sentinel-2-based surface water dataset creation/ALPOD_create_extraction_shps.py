@@ -22,27 +22,27 @@ def regionfun(region):
   global region_name,  riverfile, region_label
   if region == 'TUK':
     region_name = 'TUKMRDAND'
-    riverfile = "/Users/webbe/Documents/ALPOD/River_vectors/MRD_rivers_drive30.shp"
+    riverfile = ".../MRD_rivers_drive30.shp"
     region_label = 'TUK'
   elif region == 'AND':
     region_name = 'TUKMRDAND'
-    riverfile = "/Users/webbe/Documents/ALPOD/River_vectors/MRD_rivers_drive30.shp"
+    riverfile = ".../MRD_rivers_drive30.shp"
     region_label = 'AND'
   elif region == 'MRD':
     region_name = 'TUKMRDAND'
-    riverfile ="/Users/webbe/Documents/ALPOD/River_vectors/MRD_rivers_drive30.shp"
+    riverfile =".../MRD_rivers_drive30.shp"
     region_label = "MRD"
   elif region == 'AKCP':
     region_name = 'AKCP'
-    riverfile = "/Users/webbe/Documents/ALPOD/River_vectors/AKCP_rivers_30.shp"
+    riverfile = ".../AKCP_rivers_30.shp"
     region_label = 'AKCP'
   elif region == 'YKD':
     region_name = 'YKD'
-    riverfile = "/Users/webbe/Documents/ALPOD/River_vectors/YKD_rivers_drive_30.shp"
+    riverfile = ".../YKD_rivers_drive_30.shp"
     region_label = "YKD"
   elif region == 'YKF':
     region_name = 'YKF'
-    riverfile = "/Users/webbe/Documents/ALPOD/River_vectors/YKF_river.shp"
+    riverfile = ".../YKF_river.shp"
     region_label = "YKF"
   else:
     print("Invalid region")
@@ -54,13 +54,13 @@ def regionfun(region):
 regionfun('AND') # options = TUK, MRD, AND, AKCP, YKD, YKF
 
 ## READ IN FILES
-lakeshpfile = '/Users/webbe/Documents/ALPOD/Lakes_clipped/justlakes_' + region_label + '.shp'
+lakeshpfile = '.../Lakes_clipped/justlakes_' + region_label + '.shp'
 lakeshps = gpd.read_file(lakeshpfile)
 river = gpd.read_file(riverfile)
 
 ## DEAL WITH CRSs
 if region_name == 'TUKMRDAND':
-    roi = gpd.read_file('/Users/webbe/Documents/ALPOD/ROIs/TUK_roi.shp')
+    roi = gpd.read_file('...ROIs/TUK_roi.shp')
     river = river.set_crs(roi.crs)
     TUKMRD_crs = lakeshps.crs
     river = river.to_crs(TUKMRD_crs)
@@ -153,6 +153,6 @@ exploded['region'] = region_label
 #############################
 ###### SAVE TO FILE
 ############################
-savepath = '/Users/webbe/Documents/ALPOD/Lake_extraction_shps/' + region_label + '_extraction.shp'
+savepath = '.../Lake_extraction_shps/' + region_label + '_extraction.shp'
 exploded.to_file(savepath, driver='ESRI Shapefile')
 
