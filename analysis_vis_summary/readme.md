@@ -14,8 +14,8 @@ _LandsatComparison_Figure6.R_    Creates Figure 6 (Example lakes showing how Lan
 
 _LandsatComparison_Figure7.R_    Creates Figure 7 (Lake area trends measured across regions with Sentinel-2 and Landsat products and effect of wetness sensitivity to the relative error in the trend) and calculates the average relative difference in the trend between Landsat products and S2.
 
-_Table1.py_    takes input shapefiles of lakes and input csv of fractal dimensions and outputs a summary table (Table 1)  
+_LandsatComparison_Table1.py_    Creates Table 1 (Lake characteristics described by study region); takes input shapefiles of lakes and input csv of fractal dimensions and outputs a summary table 
 
-_LandsatComparison_Table2.R_    Creates Table 2 (Regional lake area estimated by all products in dry and wet years) and calculates the percentage by which Landsat products over/under-estimate lake area in dry/wet years compared with S2.
+_LandsatComparison_Table2.R_    Creates Table 2 (Summary description of lake objects included in this analysis) and calculates the percentage by which Landsat products over/under-estimate lake area in dry/wet years compared with S2.
 
 _LandsatComparison_stats.R_    (1) Calcluates how much variance in the relative difference between Landsat trends and S2 trends is explained by wetness sensitivity. (2) Determines if regional lake area is higher in dryer years. (3) Summarizes absolute and relative differences between Landsat and S2. (4) Summarizes the percent differences between the Pekel and Pickens products.
