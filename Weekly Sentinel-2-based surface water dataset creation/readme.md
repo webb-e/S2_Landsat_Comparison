@@ -1,5 +1,5 @@
 ### Weekly Sentinel-2-based surface water dataset creation 
-The weekly S2-based surface water dataset was created following the workflow created by Levenson et al., (2025). [Code]([url](https://github.com/ericslevenson/ALPOD)), [associated paper]([url](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2024GL112771)), and [archived dataset]([url](https://daac.ornl.gov/cgi-bin/dsviewer.pl?ds_id=2399)). For this project, we used the vectorized lakes created by Levenson et al., (2025) in Alaska and created our own lake dataset following the same methods for the three Canadian study regions.
+The weekly S2-based surface water dataset was created following the workflow created by Levenson et al., (2025). [Code](https://github.com/ericslevenson/ALPOD), [associated paper](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2024GL112771), and [archived dataset](https://daac.ornl.gov/cgi-bin/dsviewer.pl?ds_id=2399). For this project, we used the vectorized lakes created by Levenson et al., (2025) in Alaska and created our own lake dataset following the same methods for the three Canadian study regions.
 
 _ALPOD_create_extraction_shps.py_ takes input shapefiles of lakes, buffers by 60 m, subtracts rivers, dissolves overlapping polygons, and adds a lake_id. Output is used as an input for subsequent surface water occurance processing.  
 
