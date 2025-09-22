@@ -9,9 +9,9 @@ library(scales)
 #####
 
 # Define the folder path, list files in folder
-#shp_folder <- "/Users/webbe/Documents/ALPOD/Lakes_clipped/"
-shp_folder <-'/Volumes/EW_external/ALPOD/Lake_extraction_shps//'
-#shp_folder <- "/Users/webbe/Documents/ALPOD/Lake_extraction_shps//"
+#shp_folder <- "..../Lakes_clipped/"
+shp_folder <-'..../Lake_extraction_shps//'
+#shp_folder <- "..../Lake_extraction_shps//"
 
 shp_files <- list.files(shp_folder, pattern = "\\.shp$", full.names = TRUE)
 first_shp <- st_read(shp_files[1], quiet = TRUE)
@@ -46,7 +46,7 @@ shp_df <- as.data.frame(shp_df) %>%
 ### Read in csv with post-processed lakes (i.e., analysis)
 #####
 
-df <- fread(file='/Users/elizabethwebb/Library/CloudStorage/GoogleDrive-webb.elizabeth.e@gmail.com/My Drive/PostDoc/ALPOD/Lakewise_csvs/Landsat_analysis_data.csv')
+df <- fread(file='.../Lakewise_csvs/Landsat_analysis_data.csv')
 
 #####
 ### combine data and get ready for plotting
@@ -149,5 +149,5 @@ ggplot(data , aes(x = area_km2, fill = type, color = type)) +
 #####
 ggsave(finalplot, filename ='Landsat_comparison_Fig2.jpg', 
        width=200, height=130,units="mm", dpi=500, scale=2,
-       path='/Users/elizabethwebb/Library/CloudStorage/GoogleDrive-webb.elizabeth.e@gmail.com/My Drive/PostDoc/landsat_comparison/Figures')
+       path='..../Figures')
 
