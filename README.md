@@ -1,5 +1,5 @@
 ## Comparison between Landsat-based surface water products and Sentinel-2 based surface water occurance
-This is the companion code to 'Long-term lake area trends: how small, shallow lakes with emergent vegetation muddy the water'
+This is the companion code to 'Discrepancies in Arctic-Boreal lake area trends driven by sensitivity to dry conditions'
 
 This repository is organized into folders as follows:
 
