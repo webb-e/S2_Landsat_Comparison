@@ -1,6 +1,6 @@
 ### Data analysis, visualization, and summary 
 
-_LandsatAnalysis_MLmodel.ipynb_  Fits the machine learning model relating the mean relative difference between products in dry years subtracted from the mean relative difference between products in wet years to various explantory features.
+_LandsatComparison_MLmodel.ipynb_  Fits the machine learning model relating the mean relative difference between products in dry years subtracted from the mean relative difference between products in wet years to various explantory features.
 
 _LandsatComparison_Figure2.R_    Creates Figure 2 (Relative density distribution of lake sizes by study region)
 
